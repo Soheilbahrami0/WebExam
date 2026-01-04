@@ -4,12 +4,17 @@ body {
   direction: rtl;
   background: #f5f5f5;
   text-align: center;
+  margin-top: 70px; /* فاصله از بالا برای nav ثابت */
 }
 
 /* منو */
 nav {
   background: #222;
   padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav a {
