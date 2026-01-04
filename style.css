@@ -19,77 +19,61 @@ nav a {
   font-size: 18px;
 }
 
-/* بخش وسط صفحه */
+/* سکشن */
 .container {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* سکشن‌ها */
-.section {
-  padding: 80px 20px;
-  background: white;
-}
-
-.section.dark {
-  background: #222;
-  color: white;
-}
-
-/* عنوان‌ها */
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 20px;
-}
-
-/* تیم */
-.team {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.member {
-  background: #f0f0f0;
-  padding: 20px;
-  width: 220px;
-  border-radius: 12px;
-}
-
-/* تماس */
-.contact p {
-  font-size: 18px;
-  margin: 10px 0;
+  padding: 60px 20px;
 }
 
 /* محصولات */
 .products {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .product {
   background: white;
   border-radius: 12px;
-  width: 250px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .product h3 {
   font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* رنگ‌ها */
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+/* موجودی */
+.stock {
+  font-size: 16px;
+}
+
+.low {
+  color: red;
+}
+
+.ok {
+  color: green;
 }
