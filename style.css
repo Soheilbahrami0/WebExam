@@ -24,6 +24,46 @@ nav a {
   padding: 60px 20px;
 }
 
+/* سکشن‌ها */
+.section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.section.dark {
+  background: #222;
+  color: white;
+}
+
+/* عنوان‌ها */
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* تیم */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: #f0f0f0;
+  padding: 20px;
+  width: 220px;
+  border-radius: 12px;
+}
+
 /* محصولات */
 .products {
   display: grid;
@@ -70,20 +110,6 @@ nav a {
   border: 1px solid #888;
 }
 
-/* موجودی */
-.stock {
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.low {
-  color: red;
-}
-
-.ok {
-  color: green;
-}
-
 /* دکمه خرید */
 .buy-btn {
   background: #222;
@@ -97,4 +123,9 @@ nav a {
 
 .buy-btn:hover {
   background: #444;
+}
+
+.buy-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
 }
